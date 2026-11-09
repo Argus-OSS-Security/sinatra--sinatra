@@ -1,11 +1,12 @@
 name: Release
 
-on:
-  push:
-    tags:
-      - v*
-  workflow_dispatch:
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   push:
+#     tags:
+#       - v*
+#   workflow_dispatch:
+# 
 jobs:
   release:
     if: github.repository == 'sinatra/sinatra'

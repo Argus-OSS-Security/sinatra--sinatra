@@ -1,11 +1,12 @@
 name: Testing
 
-on:
-  push:
-    branches:
-      - '**'
-  pull_request:
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   push:
+#     branches:
+#       - '**'
+#   pull_request:
+# 
 permissions:
   contents: read # to fetch code (actions/checkout)
 
